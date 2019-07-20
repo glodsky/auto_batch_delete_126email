@@ -19,12 +19,9 @@ def do(a1,a2):
     pyautogui.moveRel(50,0)
     pyautogui.click()
     time.sleep(3)
-    # pyautogui.typewrite("...sdf", interval=0.1)
-    #pyautogui.press('tab')
-    #pyautogui.typewrite("xx.sdf",interval=0.1)
-    #pyautogui.press("enter")
+ 
     
-for i in range(1,135):
+for i in range(1,135): # 135 is my total pages number of emails , one page includes 100 emails
     do(a1,a2)
     print("[%s] Deleted %d/134\n"%(datetime.datetime.now().strftime('%H:%M:%S'),i))
     
