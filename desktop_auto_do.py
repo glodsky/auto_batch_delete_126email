@@ -12,13 +12,12 @@ p2 = av.imread("./choose.png")
 pos = av.find_template(p1,p2)
 a1,a2 = pos['result']
 def do(a1,a2):
-    pyautogui.moveTo(a1,a2,duration=0.5)
-    #pyautogui.moveRel(10,20)
+    pyautogui.moveTo(a1,a2,duration=0.5)  
     pyautogui.click()
     time.sleep(1.5)
     pyautogui.moveRel(50,0)
     pyautogui.click()
-    time.sleep(3)
+    time.sleep(3) # too short  is not well . Need to keep some times for deleting ....
  
     
 for i in range(1,135): # 135 is my total pages number of emails , one page includes 100 emails
